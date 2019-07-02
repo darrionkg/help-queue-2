@@ -4,9 +4,12 @@ import PropTypes from 'prop-types';
 function Ticket(props) {
   return (
     <div>
-      <style jsx global>{`
+      <style jsx>{`
         .color-toggle {
           background-color: grey;
+          padding-left: 10%;
+          padding-right: 10%;
+          padding-top: 1%;
         }
         .color-toggle:hover {
           background-color: lightgrey;
@@ -15,9 +18,9 @@ function Ticket(props) {
       <div className="color-toggle">
         <h3>{props.location} - {props.names}</h3>
         <p><em>{props.issue}</em></p>
-        <hr />
-
+        <br/>
       </div>
+      <hr/>
     </div>
   );
 }
