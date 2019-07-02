@@ -18,7 +18,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: [ '.js', '.jsx' ]
+    extensions: ['.js', '.jsx']
   },
 
   devtool: '#source-map',
@@ -29,18 +29,19 @@ module.exports = {
     publicPath: '/'
   },
 
- module: {
+  module: {
     rules: [
       {
         test: /\.jsx?$/,
-        loader: "babel-loader",
+        enforce: "pre",
+        loader: "eslint-loader",
         exclude: /node_modules/,
         options: {
           emitWarning: true,
           configFile: "./.eslintrc.json"
           }
         },
-        {
+      {
         test: /\.jsx?$/,
         loader: "babel-loader",
         exclude: /node_modules/,
@@ -50,7 +51,8 @@ module.exports = {
             "react",
           ],
           plugins: [
-            "react-hot-loader/babel"
+            "react-hot-loader/babel",
+            "styled-jsx/babel"
           ]
         }
       }
