@@ -25,7 +25,9 @@ function App() {
         }
       `}</style>
       <Header />
-      <TicketList />
+      <Switch>
+        <TicketList />
+      </Switch>
     </div>
   );
 }
