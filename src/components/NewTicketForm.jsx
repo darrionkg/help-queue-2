@@ -10,7 +10,6 @@ function NewTicketForm(){
           margin-bottom: 5px;
         }
       `}</style>
-      <hr/>
       <form>
         <input
           type='text'

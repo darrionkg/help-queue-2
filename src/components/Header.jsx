@@ -13,8 +13,9 @@ function Header() {
         }
       `}</style>
       <div>
-        <h1>Help Queue!</h1>
+        <h1>Help Queue</h1>
         <Link style={{ textDecoration: 'none', color: 'white', fontSize: '20px' }} to="/">Home</Link> | <Link style={{ textDecoration: 'none', color: 'white', fontSize: '20px' }} to="/newticket">Create Ticket</Link>
+        <hr/>
       </div>
     </div>
   );
