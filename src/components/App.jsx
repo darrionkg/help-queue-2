@@ -30,6 +30,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={TicketList} />
         <Route path='/newticket' component={NewTicketForm} />
+        <Route component={Error404} />
       </Switch>
     </div>
   );
