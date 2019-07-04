@@ -15,4 +15,8 @@ function Error404(props){
   );
 }
 
+Error404.propTypes = {
+  location: PropTypes.object
+};
+
 export default Error404;
